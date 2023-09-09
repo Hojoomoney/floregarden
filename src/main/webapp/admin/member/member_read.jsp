@@ -80,7 +80,7 @@
 
 					</table>
 					<button onClick = "confirmDelete()">삭제하기</button>
-					<button onClick = "location.href='/Floregarden/admin/member/member.jsp'">목록 보기</button>
+					<button onClick = "location.href='/Floregarden/admin/member.jsp'">목록 보기</button>
 	</main>
 	<script>
 function confirmDelete() {

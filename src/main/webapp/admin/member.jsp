@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@page import="com.util.www.MemberDAO"%>
 <%@page import="com.util.www.MemberDTO"%>
 <%@page import="java.util.ArrayList"%>
@@ -41,9 +42,8 @@
 
     <!-- (B) MAIN -->
     <% 
-			ArrayList<MemberDTO> list = new ArrayList<MemberDTO>();
 			MemberDAO dao = new MemberDAO(application);
-			dao.getList(list);
+			List<MemberDTO> list = dao.getList();
 			dao.close();
 		%>
     <main id="pgmain">

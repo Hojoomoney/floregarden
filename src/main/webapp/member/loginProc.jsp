@@ -19,7 +19,7 @@
 		
 		if (!rs.next()) {
 			out.println("<script>alert('회원정보가 없습니다!'); history.back(); </script>");
-		} else if (userId.equals(rs.getString(1)) && userPwd.equals(rs.getString(2))) {
+		} else if (userId.equals(rs.getString(2)) && userPwd.equals(rs.getString(3))) {
 			session.setAttribute("userId", userId);
 			session.setAttribute("userPwd", userPwd);
 			

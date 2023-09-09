@@ -111,9 +111,9 @@ public class MemberDAO extends JDBConnect {
 		}
 		return result;
 	}
-	public List<MemberDTO> getList(ArrayList<MemberDTO> list) {
+	public List<MemberDTO> getList() {
 		String sql = "SELECT * FROM MEMBER ORDER BY UNO";
-		
+		List<MemberDTO> list = new ArrayList<MemberDTO>();
 		try {
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
