@@ -1,0 +1,211 @@
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  padding: 0; margin: 0;
+  background:#9BC86A; 
+}
+
+/* (B) SIDEBAR */
+/* (B1) SIDEBAR ITSELF */
+
+#pgside {
+  width: 200px;
+  flex-shrink: 0;
+  transition: width 0.2s;
+  background: #283039;
+}
+
+/* (B2) USER OR BRANDING */
+#pgside #pguser {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+}
+#pgside #pguser img {
+  width: 50px;
+  margin-right: 5px;
+  border-radius: 50%
+}
+
+/* (B3) SIDEBAR ITEMS */
+#pgside, #pgside a { color: #fff; }
+#pgside a {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #pgside a.current { background: #7c1919; } */
+/* #pgside a:hover { background: #9b2323; } */
+
+/* (B4) SIDEBAR ICONS & TEXT */
+#pgside i.ico, #pgside i.txt { font-style: normal; }
+#pgside i.ico {
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+/* (B5) SMALL SCREEN TRANSFORMATION */
+@media screen and (max-width:768px) {
+  #pgside { width: 70px; }
+  #pgside #pguser { justify-content: center; }
+  #pgside a {
+    text-align: center;
+    padding: 20px 0;
+  }
+  #pgside i.ico {
+    font-size: 1.5em;
+    margin-right: 0;
+  }
+  #pgside i.txt { display: none; }
+}
+
+/* (C) MAIN CONTENTS */
+#pgmain {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f2f2f2;
+}
+
+
+
+table {
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th {
+  text-align: left;
+}
+  
+thead {
+  font-weight: bold;
+  color: #fff;
+  background: #73685d;
+}
+  
+ td, th {
+  padding: 1em .5em;
+  vertical-align: middle;
+}
+  
+ td {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background: #fff;
+}
+
+a {
+  color: #73685d;
+}
+  
+ @media all and (max-width: 768px) {
+    
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  th {
+    text-align: right;
+  }
+  
+  table {
+    position: relative; 
+    padding-bottom: 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  
+  thead {
+    float: left;
+    white-space: nowrap;
+  }
+  
+  tbody {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  th {
+    border-bottom: 1px solid #a39485;
+  }
+  
+  td {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  
+  }
+  
+  
+  
+  
+  /* 버튼 디자인 */
+ 
+.button-blue {
+  align-items: center;
+  background-color: #06f;
+  border: 2px solid #06f;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  margin-top : 10px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-blue:focus {
+  color: #171e29;
+}
+
+.button-blue:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+.button-blue:active {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-blue {
+    min-width: 170px;
+  }
+}
+
+

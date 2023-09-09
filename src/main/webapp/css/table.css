@@ -1,0 +1,34 @@
+
+table {
+	border: 0px solid;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+th, td {
+	border-bottom: 1px solid #cfcfcf;
+	padding: 10px 5px;
+	text-align: center;
+}
+
+th {
+	background-color: #14a872;
+	color: white;
+}
+
+/* 짝수줄만 배경색을 다르게 */
+tr:nth-child(2n+0) {
+	background-color: #eeeeee;
+}
+
+td:nth-child(1) {
+	width: 40%
+}
+
+th {
+	border-bottom: double #bcd74e;
+}
+
+table>:nth-child(1) {
+	border: 0px solid #ffffff;
+}
